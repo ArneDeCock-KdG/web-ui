@@ -1,0 +1,24 @@
+// Vendors
+@import "vendors/bootstrap-3.3.6/bootstrap";
+// Core
+@import "core/reset";
+@import "core/variables";
+@import "core/mixins";
+@import "core/fonts";
+// Partials
+@import "partials/toolbar";
+
+
+
+body {
+  position: relative;
+  min-height: 100%;
+
+  font-family: $font-stack;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+footer {
+  position: absolute;
+}
