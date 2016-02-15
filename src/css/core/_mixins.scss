@@ -4,3 +4,16 @@
   -ms-box-sizing: $box;
   box-sizing: $box;
 }
+
+@mixin user-drag($drag) {
+  user-drag: $drag;
+  -webkit-user-drag: $drag;
+}
+
+@mixin user-select($select) {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;
+}

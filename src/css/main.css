@@ -5841,7 +5841,7 @@ a {
   src: url("../../fonts/weblysleek_ui/weblysleekuisb.ttf") format("truetype"); }
 .toolbar {
   box-shadow: 0 0.025em .75em #333;
-  background-color: #009688;
+  background-color: #dc3522;
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -5851,18 +5851,28 @@ a {
   .toolbar .toolbar-brand, .toolbar .toolbar-dropdown-toggle {
     color: white !important; }
   .toolbar .toolbar-dropdown-menu {
-    padding: 1em; }
+    padding: 1em;
+    background-color: rgba(245, 245, 245, 0.85); }
     @media screen and (min-width: 600px) {
       .toolbar .toolbar-dropdown-menu {
         padding: 3em;
         width: 25em !important; } }
+
+.forms-default {
+  margin: 0.5em; }
+
+.full-background {
+  background: transparent url("../../img/bg-kandoe.png") !important;
+  background-size: cover !important; }
 
 body {
   position: relative;
   min-height: 100%;
   font-family: "WeblySleek UI", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  background: transparent url("../img/bg-kandoe.png") !important;
+  background-size: cover !important; }
 
 footer {
   position: absolute; }

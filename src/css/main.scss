@@ -7,6 +7,8 @@
 @import "core/fonts";
 // Partials
 @import "partials/toolbar";
+@import "partials/forms";
+@import "partials/custom";
 
 
 
@@ -17,6 +19,9 @@ body {
   font-family: $font-stack;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  background: transparent url("../img/bg-kandoe.png") !important;
+  background-size: cover !important;
+  //background-color: $background-color;
 }
 
 footer {

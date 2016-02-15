@@ -18,7 +18,7 @@
 
   .toolbar-dropdown-menu {
     padding: 1em;
-
+    background-color: $background-transparent-color;
     @media screen and (min-width: $breakpoint-tablet) {
       padding: 3em;
       width: 25em !important;
