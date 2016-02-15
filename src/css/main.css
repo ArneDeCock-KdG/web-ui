@@ -5846,10 +5846,25 @@ a {
   border: 0;
   border-radius: 0;
   z-index: 1000; }
+  .toolbar .toolbar-container {
+    padding-right: 0; }
   .toolbar .toolbar-brand {
     font-size: 2.25em; }
-  .toolbar .toolbar-brand, .toolbar .toolbar-dropdown-toggle {
-    color: white !important; }
+  .toolbar .toolbar-dropdown {
+    margin-right: 0 !important; }
+    .toolbar .toolbar-dropdown .toolbar-dropdown-toggle {
+      padding: 0.25em;
+      margin: 0;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .toolbar .toolbar-dropdown .toolbar-dropdown-toggle .toolbar-dropdown-toggle-container {
+        padding: 0 0.5em; }
+    .toolbar .toolbar-dropdown .toolbar-dropdown-toggle:hover {
+      background-color: #26a69a; }
+    .toolbar .toolbar-dropdown .toolbar-brand, .toolbar .toolbar-dropdown .toolbar-dropdown-toggle {
+      color: white !important; }
   .toolbar .toolbar-dropdown-menu {
     padding: 1em;
     background-color: rgba(245, 245, 245, 0.85); }
@@ -5857,6 +5872,10 @@ a {
       .toolbar .toolbar-dropdown-menu {
         padding: 3em;
         width: 25em !important; } }
+  .toolbar .toolbar-user {
+    max-height: 33.33333px;
+    margin: 0 0.5em;
+    overflow: visible; }
 
 .forms-default {
   margin: 0.5em; }

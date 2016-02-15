@@ -9,11 +9,37 @@
   border-radius: 0;
   z-index: 1000;
 
-  .toolbar-brand{
+  .toolbar-container{
+    padding-right: 0;
+  }
+
+  .toolbar-brand {
     font-size: 2.25em;
   }
-  .toolbar-brand, .toolbar-dropdown-toggle{
-    color: $text-color-light !important;
+
+  .toolbar-dropdown {
+    margin-right: 0 !important;
+
+    .toolbar-dropdown-toggle {
+      padding: 0.25em;
+      margin: 0;
+      height: $toolbar-height;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .toolbar-dropdown-toggle-container{
+        padding: 0 $default-margin;
+      }
+    }
+
+    .toolbar-dropdown-toggle:hover{
+      background-color: $primary-color-light;
+    }
+
+    .toolbar-brand, .toolbar-dropdown-toggle {
+      color: $text-color-light !important;
+    }
   }
 
   .toolbar-dropdown-menu {
@@ -23,5 +49,11 @@
       padding: 3em;
       width: 25em !important;
     }
+  }
+
+  .toolbar-user {
+    max-height: $toolbar-height / 1.5;
+    margin: 0 $default-margin;
+    overflow: visible;
   }
 }
