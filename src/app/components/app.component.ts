@@ -9,7 +9,7 @@ import {ToolbarComponent} from "./toolbar.component";
             <toolbar></toolbar>
         </header>
 
-        <div id="main-content" class="full-background">
+        <div id="main-content">
         <section id="register">
             <register></register>
         </section>

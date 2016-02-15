@@ -28,7 +28,7 @@ System.register(['angular2/core', "./authentication/register.component", "./tool
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n        <header>\n            <toolbar></toolbar>\n        </header>\n\n        <div id=\"main-content\" class=\"full-background\">\n        <section id=\"register\">\n            <register></register>\n        </section>\n        </div>\n\n        <footer></footer>\n    ",
+                        template: "\n        <header>\n            <toolbar></toolbar>\n        </header>\n\n        <div id=\"main-content\">\n        <section id=\"register\">\n            <register></register>\n        </section>\n        </div>\n\n        <footer></footer>\n    ",
                         directives: [toolbar_component_1.ToolbarComponent, register_component_1.RegisterComponent]
                     }), 
                     __metadata('design:paramtypes', [])

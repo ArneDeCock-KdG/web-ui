@@ -22,7 +22,7 @@ System.register(['angular2/core'], function(exports_1) {
                 RegisterComponent = __decorate([
                     core_1.Component({
                         selector: 'register',
-                        template: "\n        <form name=\"registration\">\n            <label for=\"username\">username</label>\n            <input id=\"username\" type=\"text\" class=\"span2\" placeholder=\"kandoe1\" required>\n            <label for=\"name\">name</label>\n            <input id=\"name\" type=\"text\" class=\"span2\" placeholder=\"John\" required>\n            <label for=\"surname\">surname</label>\n            <input id=\"surname\" type=\"text\" class=\"span2\" placeholder=\"Doe\" required>\n            <label for=\"email\">email</label>\n            <input id=\"email\" type=\"email\" class=\"span2\" placeholder=\"Doe\" required>\n            <label for=\"password\">password</label>\n            <input id=\"password\" type=\"password\" class=\"span2\" placeholder=\"password\" required>\n            <label for=\"verify-password\">verify password</label>\n            <input id=\"verify-password\" type=\"password\" class=\"span2\" placeholder=\"password\" required>\n            <input type=\"submit\" value=\"Register\" class=\"btn\"/>\n        </form>\n    "
+                        templateUrl: 'html/register.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], RegisterComponent);
