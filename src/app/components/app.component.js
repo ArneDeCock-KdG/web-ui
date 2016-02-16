@@ -28,7 +28,7 @@ System.register(['angular2/core', "./toolbar.component", "./authentication/regis
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n        <toolbar></toolbar>\n\n        <div id=\"main-content\">\n        <section id=\"register\">\n            <register></register>\n        </section>\n        </div>\n\n        <footer>\n            <p>test <a>link</a></p>\n        </footer>\n    ",
+                        template: "\n\n        <div id=\"main-content\" >\n        <section id=\"authentication\" class=\"flex-container\">\n            <register class=\"flex-item\"></register>\n        </section>\n        </div>\n\n        <footer>\n            <p>test <a>link</a></p>\n        </footer>\n    ",
                         directives: [toolbar_component_1.ToolbarComponent, register_component_1.RegisterComponent]
                     }), 
                     __metadata('design:paramtypes', [])

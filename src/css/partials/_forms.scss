@@ -7,18 +7,17 @@
 
 /* ----- Registration Form ----- */
 
-.register{
-  display: inline-block;
-}
 
-.register form {
+
+
+.authentication form {
   padding: 20px 50px 40px 50px;
   background-color: rgba(248, 248, 248, 0.96);
   @include border-radius(8px);
   @include box-shadow(0, 1px, 5px, 0, $shadow);
 }
 
-.register form h2 {
+.authentication form h2 {
   margin-bottom: 25px;
   padding-bottom: 15px;
   border-bottom: 2px dotted #bbb;
@@ -27,12 +26,7 @@
   text-align: center;
 }
 
-.register span{
-  color: $primary-color;
-}
-
-.register form input {
-  padding-left: 0.5em;
+.authentication form input {
   width: 95%;
   height: 30px;
   background: #fcfcfc;
@@ -43,28 +37,29 @@
   color: #888;
   font-size: 16px;
   margin-bottom: 0.5em;
+  padding-left: 0.5em;
 }
 
-.register form input:focus {
+.authentication form input:focus {
   border: 1px solid #ccc;
   @include disable-box-shadow()
 }
 
-.register form label {
+.authentication form label {
   margin: 7px 0 10px 5px;
   font-size: 16px;
   text-align: left;
 }
 
-.register form label span {
+.authentication form label span {
   font-style: italic;
 }
 
-.register form input:-moz-placeholder { color: #aaa; }
-.register form input:-ms-input-placeholder { color: #aaa; }
-.register form input::-webkit-input-placeholder { color: #aaa; }
+.authentication form input:-moz-placeholder { color: #aaa; }
+.authentication form input:-ms-input-placeholder { color: #aaa; }
+.authentication form input::-webkit-input-placeholder { color: #aaa; }
 
-.register form input[type=submit] {
+.authentication form input[type=submit] {
   cursor: pointer;
   width: 60%;
   height: 42px;
@@ -84,11 +79,13 @@
   text-align: center;
 }
 
-.register form input[type=submit]:hover {
-  @include box-shadow(0, -15px, 30px, 0, rgba(255,255,255,.05), inset)
+
+.authentication form input[type=submit]:hover {
+          @include box-shadow(0, -15px, 30px, 0, rgba(255,255,255,.05), inset)
 }
 
-.register form input[type=submit]:active {
+
+.authentication form input[type=submit]:active {
   -moz-box-shadow:
           0 -15px 30px 0 rgba(255,255,255,.05) inset,
           0 5px 8px 0 rgba(0,0,0,.1) inset;
@@ -111,7 +108,94 @@
   @include flex-align-item(center);
 }
 
+
 .flex-item:nth-child(1) {
   @include flex-order(0);
   @include flex-align-self(auto);
 }
+
+
+.authenticationpanel {
+  border-color: #ccc;
+}
+.authenticationpanel>.panel-heading {
+  color: #00415d;
+  border-color: #fff;
+  text-align:center;
+}
+
+.panel-heading{
+  h1{
+    color: #404040;
+    padding-bottom: 0.5em;
+    border-bottom: dotted #a3a3a3 2px;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+   span{
+     font-family: "Myriad Pro";
+       color: $primary-color;
+   }
+}
+.authenticationpanel>.panel-heading a{
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+  font-size: 15px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.authenticationpanel>.panel-heading a.active{
+  color: $primary-color;
+  font-size: 22px;
+}
+
+.authenticationpanel>.panel-heading hr{
+  margin-bottom: 0px;
+  clear: both;
+  border: 0;
+  height: 1px;
+}
+.authenticationpanel input[type="text"],.authenticationpanel input[type="email"],.authenticationpanel input[type="password"] {
+  height: 45px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.authenticationpanel input:hover,
+.authenticationpanel input:focus {
+  outline:none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #ccc;
+}
+
+.forgot-password {
+  text-decoration: underline;
+  color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+  text-decoration: underline;
+  color: #666;
+}
+
+.forms-input-group *{
+   margin: $default-padding 0;
+
+}
+
+.first{
+  margin-top: 0 !important;
+}
+
+
+
+
+

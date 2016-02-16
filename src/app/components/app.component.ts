@@ -6,11 +6,10 @@ import {RegisterComponent} from "./authentication/register.component";
 @Component({
     selector: 'my-app',
     template: `
-        <toolbar></toolbar>
 
-        <div id="main-content">
-        <section id="register">
-            <register></register>
+        <div id="main-content" >
+        <section id="authentication" class="flex-container">
+            <register class="flex-item"></register>
         </section>
         </div>
 

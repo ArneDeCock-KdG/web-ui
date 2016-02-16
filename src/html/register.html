@@ -1,24 +1,65 @@
 <div class="row flex-container">
-    <div class="register col-md-5 flex-item">
-        <form name="registration">
+    <div class="authentication col-md-5 flex-item">
+        <div class="authenticationpanel panel">
+            <div class="panel-heading">
+                <h1>Welcome to <span>CanDo</span></h1>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a onclick="loginClick()" class="active" id="login-form-link">Sign In</a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a onclick="registerClick()" id="register-form-link">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form id="login-form" name="login" action="http://phpoll.com/login/process" method="post" role="form" style="display: block;">
+                            <div class="input-group forms-default">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input type="email" class="form-control" id="username" placeholder="Username" required>
+                            </div>
+                            <div class="input-group forms-default">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input type="email" class="form-control" id="password" placeholder="Password" required>
+                            </div>
 
-            <h2>REGISTER TO <span>KANDOE</span></h2>
-            <label for="username">Username</label>
-            <input id="username" type="text" class="span2" placeholder=" kandoe1" required>
+                            <input type="submit" value="Sign In"/>
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <a href="http://phpoll.com/recover" class="forgot-password">Forgot Password?</a>
+                                    </div>
+                                </div>
+                        </form>
+                        <form id="register-form" name="registration" action="http://phpoll.com/register/process" method="post" role="form" style="display: none;">
+                            <div class="forms-input-group input-group forms-default">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input type="text" class="form-control first" id="username-reg" placeholder="Username" required>
+                                <input type="text" class="form-control" id="name" placeholder="Name" required>
+                                <input type="text" class="form-control" id="surname" placeholder="Surname" required>
+                            </div>
+                            <div class="input-group forms-default">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-send"></i></span>
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="input-group forms-default">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input type="password" class="form-control" id="password-reg" placeholder="Password" required>
+                            </div>
+                            <div class="input-group forms-default">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-ok"></i></span>
+                                <input type="password" class="form-control" id="verify-password" placeholder="Verify password" required>
+                            </div>
+                            <input type="submit" value="Sign Up"/>
 
-            <label for="name">Name</label>
-            <input id="name" type="text" class="span2" placeholder=" John" required>
-            <label for="surname">Surname</label>
-            <input id="surname" type="text" class="span2" placeholder=" Doe" required>
-            <label for="email">Email</label>
-            <input id="email" type="email" class="span2" placeholder=" Doe" required>
-            <label for="password">Password</label>
-            <input id="password" type="password" class="span2" placeholder=" password" required>
-            <label for="verify-password">Verify password</label>
-            <input id="verify-password" type="password" class="span2" placeholder=" password" required>
-
-            <input type="submit" value="Register"/>
-
-        </form>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+
