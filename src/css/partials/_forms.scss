@@ -13,13 +13,9 @@
 
 .register form {
   padding: 20px 50px 40px 50px;
-  background-color: #f8f8f8;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
-  -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+  background-color: rgba(248, 248, 248, 0.96);
+  @include border-radius(8px);
+  @include box-shadow(0, 1px, 5px, 0, $shadow);
 }
 
 .register form h2 {
@@ -31,17 +27,17 @@
   text-align: center;
 }
 
+.register span{
+  color: $primary-color;
+}
+
 .register form input {
   width: 95%;
   height: 30px;
   background: #fcfcfc;
   border: 1px solid #ddd;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+  @include border-radius(2px);
+  @include box-shadow(0, 1px, 3px, 0, rgba(0,0,0,.1), inset);
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   color: #888;
   font-size: 16px;
@@ -50,9 +46,7 @@
 
 .register form input:focus {
   border: 1px solid #ccc;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  @include disable-box-shadow()
 }
 
 .register form label {
@@ -76,29 +70,21 @@
   margin-top: 25px;
   margin-left: 6em;
   padding: 0;
-  background: #eb4141;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+  background: $primary-color;
+  @include border-radius(3px);
   border: 0;
-  -moz-box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
-  -webkit-box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
-  box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+  @include box-shadow(0, 15px, 30px, 0, rgba(255,255,255,.1), inset);
   font-size: 16px;
   font-weight: 400;
   color: #fff;
   text-shadow: 0 1px 2px rgba(0,0,0,.1);
-  -o-transition: all .2s;
-  -moz-transition: all .2s;
-  -webkit-transition: all .2s;
-  -ms-transition: all .2s;
+  @include transition(all, 0.2s);
+
   text-align: center;
 }
 
 .register form input[type=submit]:hover {
-  -moz-box-shadow: 0 -15px 30px 0 rgba(255,255,255,.05) inset;
-  -webkit-box-shadow: 0 -15px 30px 0 rgba(255,255,255,.05) inset;
-  box-shadow: 0 -15px 30px 0 rgba(255,255,255,.05) inset;
+  @include box-shadow(0, -15px, 30px, 0, rgba(255,255,255,.05), inset)
 }
 
 .register form input[type=submit]:active {
@@ -117,31 +103,14 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  @include flex-justify(center);
+  @include flex-align-content(center);
+  @include flex-align-item(center);
 }
 
 .flex-item:nth-child(1) {
-  -webkit-order: 0;
-  -ms-flex-order: 0;
-  order: 0;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  align-self: auto;
+  @include flex-order(0);
+  @include flex-align-self(auto);
 }

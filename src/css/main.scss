@@ -14,12 +14,12 @@
 
 body {
   position: relative;
-  min-height: 100%;
+  max-height: 100%;
 
   font-family: $font-stack;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  background: transparent url("../img/bg-kandoe.png") !important;
+  background: transparent url("../img/bg-kandoe.png") no-repeat !important;
   background-size: cover !important;
   //background-color: $background-color;
 }

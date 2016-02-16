@@ -9,12 +9,16 @@
   border-radius: 0;
   z-index: 1000;
 
-  .toolbar-container{
+  .toolbar-container {
     padding-right: 0;
   }
 
   .toolbar-brand {
     font-size: 2.25em;
+  }
+
+  .toolbar-brand, .toolbar-dropdown-toggle {
+    color: $text-color-light !important;
   }
 
   .toolbar-dropdown {
@@ -28,29 +32,45 @@
       flex-direction: column;
       justify-content: center;
 
-      .toolbar-dropdown-toggle-container{
+      .toolbar-dropdown-toggle-container {
         padding: 0 $default-margin;
       }
     }
 
-    .toolbar-dropdown-toggle:hover{
+    .toolbar-dropdown-toggle:hover {
       background-color: $primary-color-light;
-    }
-
-    .toolbar-brand, .toolbar-dropdown-toggle {
-      color: $text-color-light !important;
     }
   }
 
   .toolbar-dropdown-menu {
-    padding: 1em;
     background-color: $background-transparent-color;
+    margin-top: 0;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-topright: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
     @media screen and (min-width: $breakpoint-tablet) {
-      padding: 3em;
-      width: 25em !important;
+      width: 15em !important;
+    }
+
+    .toolbar-dropdown-menu-wide {
+      @media screen and (min-width: $breakpoint-tablet) {
+        width: 25em !important;
+      }
+    }
+
+    .toolbar-dropdown-menu-item {
+      padding: 1em;
+      @media screen and (min-width: $breakpoint-tablet) {
+        padding: 1em 3em;
+      }
+    }
+
+    .toolbar-dropdown-menu-item:hover {
+      background-color: $primary-color-light;
+      color: $text-color-light;
     }
   }
-
   .toolbar-user {
     max-height: $toolbar-height / 1.5;
     margin: 0 $default-margin;

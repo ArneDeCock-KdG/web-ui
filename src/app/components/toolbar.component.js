@@ -1,4 +1,4 @@
-System.register(['angular2/core', "./authentication/sign-in.component"], function(exports_1) {
+System.register(['angular2/core', "./authentication/user-toggle.component"], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,15 +8,15 @@ System.register(['angular2/core', "./authentication/sign-in.component"], functio
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, sign_in_component_1;
+    var core_1, user_toggle_component_1;
     var ToolbarComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (sign_in_component_1_1) {
-                sign_in_component_1 = sign_in_component_1_1;
+            function (user_toggle_component_1_1) {
+                user_toggle_component_1 = user_toggle_component_1_1;
             }],
         execute: function() {
             ToolbarComponent = (function () {
@@ -26,7 +26,7 @@ System.register(['angular2/core', "./authentication/sign-in.component"], functio
                     core_1.Component({
                         selector: 'toolbar',
                         templateUrl: 'html/toolbar.html',
-                        directives: [sign_in_component_1.SignInComponent]
+                        directives: [user_toggle_component_1.UserToggleComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], ToolbarComponent);
