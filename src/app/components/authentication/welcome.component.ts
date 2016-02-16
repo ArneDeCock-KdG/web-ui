@@ -1,7 +1,7 @@
 import {Component} from 'angular2/core';
 
 @Component({
-    selector: 'my-app',
+    selector: 'welcome',
     template: `
 
     `})
