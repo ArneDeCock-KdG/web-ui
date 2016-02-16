@@ -11,14 +11,19 @@
 
   .toolbar-container {
     padding-right: 0;
-  }
+
+    *, .toolbar-menu a {
+      color: $text-color-light;
+    }
+
+    .toolbar-menu a:hover {
+      color: $text-color-dark;
+      background-color: $primary-color-light;
+      transition: all .55s cubic-bezier(.25, .8, .25, 1);
+    }
 
     .toolbar-brand {
       font-size: 2.25em;
-    }
-
-    .toolbar-brand, .toolbar-dropdown-toggle {
-      color: $text-color-light !important;
     }
 
     .toolbar-dropdown {
@@ -33,7 +38,7 @@
         justify-content: center;
 
         .toolbar-dropdown-toggle-container {
-          padding: 0 $default-margin;
+          padding: 0 $default-padding;
         }
       }
 
@@ -49,6 +54,10 @@
       -moz-border-radius-topright: 0;
       border-top-right-radius: 0;
       border-top-left-radius: 0;
+
+      * {
+        color: $text-color-neutral;
+      }
       @media screen and (min-width: $breakpoint-tablet) {
         width: 15em !important;
       }
@@ -75,4 +84,5 @@
       max-height: $toolbar-height / 1.5;
       margin: 0 $default-margin;
     }
+  }
 }
